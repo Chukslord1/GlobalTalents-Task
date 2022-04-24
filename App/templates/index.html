@@ -30,7 +30,7 @@
 <td class="text-left">{{reservation.reservation_id}}</td>
 <td class="text-left">{{reservation.checkin}}</td>
 <td class="text-left">{{reservation.checkout}}</td>
-{% if reservation.previous_reservation %}
+{% if reservation.previous_reservation is not none %}
 <td class="text-left">{{reservation.previous_reservation}}</td>
 {% else %}
 <td class="text-left">...</td>
