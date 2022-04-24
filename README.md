@@ -5,7 +5,7 @@ Rentals reservation management system task for Global Talents Hub
 
 
 ## demo 
-[https://murmuring-gorge-95902.herokuapp.com//]
+[https://murmuring-gorge-95902.herokuapp.com/]
 
 ### Hosted on Heroku
 
