@@ -24,7 +24,7 @@ def pre_save_previous_reservation(instance, sender, *args, **kwargs):
     if instance.reservation_id == Reservation.objects.filter(rental_id=instance.rental_id).last():
         instance.previous_reservation = None
     else:
-        if instance.created_at:
+        if instance.pk:
             pass 
         else:
             instance.previous_reservation= str(Reservation.objects.filter(rental_id=instance.rental_id).last())
