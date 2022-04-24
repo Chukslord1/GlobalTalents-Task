@@ -1,1 +1,5 @@
-web: gunicorn <project_name>.wsgi --log-file -
+release: export DEVELOPMENT=True
+release: python manage.py makemigrations --no-input
+release: python manage.py migrate --no-input
+
+web: gunicorn [GlobalTalentsTest].wsgi
