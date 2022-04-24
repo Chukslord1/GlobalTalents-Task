@@ -5,7 +5,9 @@ Rentals reservation management system task for Global Talents Hub
 
 
 ## demo 
-[https://afriproperty.com.ng/]
+[https://murmuring-gorge-95902.herokuapp.com//]
+
+### Hosted on Heroku
 
 ## dependencies
 #### Python, Django
