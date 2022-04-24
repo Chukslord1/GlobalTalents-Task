@@ -10,7 +10,6 @@ class Rental(models.Model):
         return self.name 
 
 class Reservation(models.Model):
-    created_at = models.DateTimeField(default=datetime.utcnow, null=True, blank=True)
     rental_id = models.ForeignKey(Rental, on_delete = models.CASCADE)
     reservation_id = models.CharField(max_length=200)
     checkin = models.DateField()
