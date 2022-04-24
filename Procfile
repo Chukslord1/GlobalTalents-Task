@@ -2,4 +2,4 @@ release: export DEVELOPMENT=True
 release: python manage.py makemigrations --no-input
 release: python manage.py migrate --no-input
 
-web: gunicorn [GlobalTalentsTest].wsgi
+web: gunicorn GlobalTalentsTest.wsgi
