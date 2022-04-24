@@ -1,0 +1,44 @@
+
+{% load static %}
+<link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
+<link href="{% static 'style.css' %}" rel='stylesheet' type='text/css'>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>GlobalTalents Test</title>
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+</head>
+
+<body>
+<div class="table-title">
+<h3>Reservations</h3>
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-left">Rental Name</th>
+<th class="text-left">ID</th>
+<th class="text-left">CheckIn</th>
+<th class="text-left">Check Out</th>
+<th class="text-left">Previous reservation</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+   {% for reservation in reservations %} 
+<tr>
+<td class="text-left">{{reservation.rental_id.name}}</td>
+<td class="text-left">{{reservation.reservation_id}}</td>
+<td class="text-left">{{reservation.checkin}}</td>
+<td class="text-left">{{reservation.checkout}}</td>
+{% if reservation.previous_reservation %}
+<td class="text-left">{{reservation.previous_reservation}}</td>
+{% else %}
+<td class="text-left">...</td>
+{% endif %}
+</tr>
+{% endfor %}
+</tbody>
+</table>
+  
+
+  </body>
