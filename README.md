@@ -10,7 +10,7 @@ Rentals reservation management system task for Global Talents Hub
 ### Hosted on Heroku
 
 ## dependencies
-#### Python, Django
+#### Python, Django, gunicorn, whitenoise, django_heroku
 
 ## Running the application 
 Enter the following commands in your CLI:
